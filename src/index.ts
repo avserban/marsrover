@@ -55,7 +55,7 @@ const startProgram = async () => {
             }
 
             logger.info("Successfully executed all issued commands to rover.");
-            logger.info(`Rover's last position is: (2${rover.position.x}, ${rover.position.y}, ${rover.orientation})${rover.lost ? " LOST" : ""}`);
+            logger.info(`Rover's last position is: (${rover.position.x}, ${rover.position.y}, ${rover.orientation})${rover.lost ? " LOST" : ""}`);
         }
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
     } catch(err: any) {
